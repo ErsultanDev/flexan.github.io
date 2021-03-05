@@ -13,14 +13,16 @@
     }
 
     .b6__wrapper {
-        padding-top: 250px;
+        padding-top: 50px;
         display: flex;
         justify-content: space-between;
 
         .b6__item {
+            position: relative;
             width: 440px;
             border: 3px solid @accent;
-            padding: 15px;
+            padding: 100px 15px;
+
             -moz-border-radius-topleft: 15px;
             -webkit-border-top-left-radius: 15px;
             border-top-left-radius: 15px;
@@ -46,6 +48,8 @@
                     span {
                         color: @white;
                     }
+
+
                 }
             }
 
@@ -63,6 +67,13 @@
                     color: @accent;
                     font-size: 90px;
                 }
+            }
+
+            .b6__item-bottom {
+                position: absolute;
+                bottom: 25px;
+                left: 0;
+                right: 0;
             }
         }
     }
@@ -85,6 +96,7 @@
         }
     }
 }
+
 @media screen and (max-width:1024px) {
     .b6 {
         .b6__wrapper {
@@ -102,6 +114,7 @@
         }
     }
 }
+
 @media screen and (max-width:667px) {
     .b6 {
         .b6__wrapper {
@@ -113,6 +126,7 @@
         }
     }
 }
+
 @media screen and (max-width:568px) {
     .b6 {
         .b6__wrapper {
@@ -124,6 +138,7 @@
         }
     }
 }
+
 @media screen and (max-width:480px) {
     .b6 {
         .b6__wrapper {
@@ -135,9 +150,13 @@
         }
     }
 }
+
 @media screen and (max-width:425px) {
     .b6 {
+        padding: 30px 0;
+
         .b6__wrapper {
+
             width: 300px;
 
             .b6__item {

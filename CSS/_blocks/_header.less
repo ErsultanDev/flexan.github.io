@@ -14,14 +14,25 @@
     .header__wrapper {
         display: flex;
 
-
-
         .header__inner {
             display: flex;
             justify-content: space-between;
+            align-items: flex-end;
+            width: 860px;
 
             .header__left {
                 width: 400px;
+            }
+
+            .header__right {
+                width: 400px;
+
+                .header__right-picture {
+                    img {
+                        width: 100%;
+                    }
+                }
+
             }
         }
 
@@ -98,6 +109,10 @@
             width: 900px;
             margin: 0 auto;
 
+            .header__inner {
+                width: auto;
+            }
+
             .header__start {
                 margin-bottom: 50px;
             }
@@ -129,9 +144,14 @@
             flex-direction: column;
 
             .header__inner {
-                flex-direction: column;
-
+                flex-direction: column-reverse;
+                  width: 300px;
+                  margin: 0 auto;
                 .header__left {
+                    width: auto;
+                }
+
+                .header__right {
                     width: auto;
                 }
             }
@@ -223,7 +243,7 @@
                 }
 
                 h3 {
-                    font-size: 20px;
+                    font-size: 16px;
                 }
 
                 .header__list {
@@ -234,21 +254,48 @@
                     }
                 }
             }
+
+
         }
     }
 }
 
 @media screen and (max-width:425px) {
     .header {
+        padding: 30px 0;
+
         .header__wrapper {
             padding: 20px 0;
+            width: 340px;
+
 
             .header__inner {
-                flex-direction: column;
+                flex-direction: column-reverse;
+
+                .header__left {
+                    width: 350px;
+                }
+
+                .header__right {
+                    width: 300px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
             }
 
             .header__start {
-                margin: 0 40px;
+                margin: 0 auto;
+
+                h3 {
+                    font-size: 13px;
+                }
+
+                .header__list {
+                    margin: 30px 0;
+                }
 
                 .header__start-picture {
                     display: none;
